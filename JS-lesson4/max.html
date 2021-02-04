@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<script>
+
+	var name = prompt('Здравствуйте! Как Вас зовут?');
+	alert( name + '! Давайте попробуем узнать, какое из двух чисел больше!..' );
+
+	var a = +prompt('Введите первое число...');
+	var b = +prompt('Введите второе число...');
+
+	/*var max = a;
+
+	if(a < b){
+		max = b;
+	}*/
+
+	if(a > b){
+		alert(name + ', первое число больше!');
+		var max = a;
+	} else if(a == b){
+		alert(name + ', оба числа равны!');
+		max = a;
+	} else {
+		alert(name + ', второе число больше!');
+		max = b;
+	}
+
+	alert('Это число ' + max + '!');
+
+</script>
