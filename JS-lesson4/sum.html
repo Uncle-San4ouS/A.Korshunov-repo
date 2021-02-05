@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	do{
+		var n = +prompt('Введите положительное число');
+
+	} while(isNaN(n) || n < 0) 
+
+	var sum = 0;
+	for (var i = 0; i <= n; i++){
+		sum = sum + i; // sum += i;
+	}
+	document.write(sum);
+
+	/*if(isNaN(n)){
+		document.write('Вы ввели не число!');
+	} else if(n < 0) {
+		document.write('Число должно быть положительным!');
+	} else {
+		var sum = 0;
+		for (var i = 0; i <= n; i++){
+			sum = sum + i; // sum += i;
+		}
+		document.write(sum);
+	}*/
+
+	
+
+</script>

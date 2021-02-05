@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	var name = prompt('Пожалуйста, представьтесь! Как Вас звать-величать? :)');
+
+	alert('Здравствуйте, ' + name + '! Я Александр Коршунов - студент академии GeekBrains. Смотрите какую программу я написал на JS!\nДавайте сыграем в игру "Угадай число"!');
+
+	var answer = parseInt(Math.random() * 100);
+	var maxTryCount = 10;
+	var userAnswer = +prompt('Угадайте число от 1 до 100, у Вас есть ' + maxTryCount + ' попыток!');
+	
+
+	for(var tryCount = 1; tryCount < maxTryCount; tryCount++){
+		if(userAnswer == answer){
+			alert('Ура! ' + name + ', Вы угадали!');
+			break;
+		} else if(userAnswer > answer){
+			alert(name + ', Вы ввели слишком большое число...');
+		} else if(userAnswer < answer){
+			alert(name + ', Вы ввели слишком маленькое число...');
+		}
+		
+		userAnswer = +prompt(name + ', попробуйте ещё раз! Введите число от 1 до 100!\nКоличество ставшихся попыток: ' + (maxTryCount - tryCount));
+	}
+
+	if(tryCount > maxTryCount)
+		alert(name + ', Вы проиграли, так и не угадали!');
+	
+	alert('Правильный ответ был: ' + answer + '!');
+
+</script>	
