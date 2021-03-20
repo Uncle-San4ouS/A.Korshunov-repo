@@ -1,4 +1,4 @@
-from sys import argv
+import argv
 
 with open('bakery.csv', 'a', encoding='utf-8') as cheesecake_a:
     with open('bakery.csv', 'r', encoding='utf-8') as cheesecake_r:
